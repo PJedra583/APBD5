@@ -10,7 +10,7 @@ public class AnimalsController : ControllerBase
     [HttpGet]
     public IActionResult GetAnimals()
     {
-        var animals = new MockDb().Animals;
+        var animals = AnimalShelter.Animals;
         return Ok(animals);
     }
     

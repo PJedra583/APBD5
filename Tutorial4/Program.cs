@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddSingleton<MockDb>();
+builder.Services.AddSingleton<AnimalShelter>();
 
 var app = builder.Build();
 
