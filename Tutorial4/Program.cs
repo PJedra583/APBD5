@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddSingleton<MockDb>();
-
+builder.Services.AddSingleton<AnimalShelter>();
+builder.Services.AddSingleton<AnimalVisits>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,8 +23,9 @@ app.UseHttpsRedirection();
 
 // Minimal API
 app.MapAnimalEndpoints();
-
+app.MapVisitEndpoints();
 // Controllers
+// W tym podejściu zdecydowałem się korzystać z Minimal API
+// Kontrolery nie są wykorzystane
 app.MapControllers();
-
 app.Run();
