@@ -18,6 +18,7 @@ public class Animal
     public double Weight { get; set; }
     public string Hair_color { get; set;}
     
+<<<<<<< HEAD
     public override bool Equals(object obj)
     {
         if (obj is Animal animal)
@@ -34,4 +35,6 @@ public class Animal
     {
         return Id + "  " + Name + "  " + Category + "  " + Hair_color + "  " + Weight;
     }
+=======
+>>>>>>> baac5c9a7fc0cc7dfdaa8f6d37830c5e52807650
 }

@@ -9,7 +9,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddSingleton<AnimalShelter>();
+<<<<<<< HEAD
 builder.Services.AddSingleton<AnimalVisits>();
+=======
+
+>>>>>>> baac5c9a7fc0cc7dfdaa8f6d37830c5e52807650
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

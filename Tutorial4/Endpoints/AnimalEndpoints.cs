@@ -81,11 +81,19 @@ public static class AnimalEndpoints
         app.MapDelete("/animals/{id}", (int id) =>
         {
             Animal animalToRemove = AnimalShelter.Animals.Find(a => a.Id == id);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> baac5c9a7fc0cc7dfdaa8f6d37830c5e52807650
             if (animalToRemove != null)
             {
                 AnimalShelter.Animals.Remove(animalToRemove);
                 return Results.Ok();
             }
+<<<<<<< HEAD
+=======
+            
+>>>>>>> baac5c9a7fc0cc7dfdaa8f6d37830c5e52807650
             return Results.NotFound();
         });
     }
